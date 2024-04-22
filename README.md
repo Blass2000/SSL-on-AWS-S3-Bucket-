@@ -58,25 +58,46 @@ We will go to the EC2 instance and we will click on launch EC2 instance
 
 We will enter the instance name and select ubuntu as window and select security group which we have created and key pair also for connecting the instance ,
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/edd93714-190e-4334-b2e8-37046430f41a)
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/4ee1c23b-0f02-493c-9788-f31114244f57)
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/dea5663c-d501-4401-97f8-f96b9440b1e1)
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/fec1044e-696b-451d-ae57-7e27d7121395)
 
 Step5: Create the Target Group
 
 For doing this we will click on Target Group option under elastic load balancing option Following window will appear
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/0e1c4a0a-6ad1-48f5-b4dd-d88e0d7fca8d)
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/e861c105-d0ae-4dc5-8e23-6140a52fbf88)
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/b6695578-f67a-41ae-93c1-def7a60cad2c)
 
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/384ee628-6776-4f06-9cab-80dc17e7856c)
 
 
 Step 6 : Creating LoasBalancer
 
 We will click on load Balancer under load balancer option
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/dbacaa2d-2d3c-4610-82fa-23edc1c0960f)
+
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/59800086-9cce-432e-8307-61cfe3d9e5fa)
+
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/12e9d60e-ad8f-490b-9292-6fed4bca926d)
 
 
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/3ea00e0a-4bfe-4909-ba62-249d66f29702)
+
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/c12a9b6a-2e2d-4258-97ce-3a4238c68480)
 
 
 Step 7 : Installing the Apache in Our EC2
@@ -88,7 +109,11 @@ sudo apt update
 sudo apt install apache2
 
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/0bf46f04-d51b-4b39-9f5d-2ef14446caa8)
+
 When we are hitting the dns of the load balancer with following url it shows following things
+
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/0eaf8431-9615-43ce-a8a8-e89ea07d4026)
 
 
 Step 8 : Configuring Record of LoadBalancer on Route 53 and Directing to HTTPS
@@ -105,3 +130,6 @@ We will click on create record
 
 When we hit the following url it will run on https
 
+![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/9c300651-e1e4-4f3b-9121-09e92680d947)
+
+WS

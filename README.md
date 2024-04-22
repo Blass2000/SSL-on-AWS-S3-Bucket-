@@ -5,7 +5,7 @@ Configuring SSL on EC2 using AWS certificate Manager
 
 Introduction : In this article I have shown to how we can use AWS certificate manager to configure ssl on EC2
 
-#Step1 : We will go to the Route 53 console.#
+#Step1 : We will go to the Route 53 console.
 
 Under that we will select the Hosted zone
 

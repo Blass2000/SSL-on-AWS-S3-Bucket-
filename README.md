@@ -5,7 +5,7 @@ Configuring SSL on EC2 using AWS certificate Manager
 
 Introduction : In this article I have shown to how we can use AWS certificate manager to configure ssl on EC2
 
-#Step1 : We will go to the Route 53 console.
+# Step1 : We will go to the Route 53 console.
 
 Under that we will select the Hosted zone
 
@@ -18,7 +18,7 @@ Under that we will give the our domain name
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/6352c0b2-ee44-4e1f-bcc7-434364cc79ba)
 
 
-#Step2 : We will update the Name servers of our Domain in Route 53#
+# Step2 : We will update the Name servers of our Domain in Route 53
 
 For doing this we will login into our Domain Provider . In my case it is Hostinger
 
@@ -33,7 +33,7 @@ Under that we will click on the Change Name server option following the window o
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/73ca128e-e401-4506-929e-720ccfbf3396)
 
 
-#Step 3 : Requesting SSL certificate from AWS certificate Manager#
+# Step 3 : Requesting SSL certificate from AWS certificate Manager#
 
 Go to Certificate Manager in Services. Now, click on Request a Certificate. Then Select the default option of public certificate and click on Next.
 
@@ -50,8 +50,7 @@ Go to Certificate Manager in Services. Now, click on Request a Certificate. Then
 
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/2b1bfca0-ee02-4e77-b979-0c2f8f28bf01)
 
-
-#Step 4 : Launching EC2 instance#
+# Step 4 : Launching EC2 instance
 
 We will go to the EC2 instance and we will click on launch EC2 instance
 
@@ -65,7 +64,7 @@ We will enter the instance name and select ubuntu as window and select security 
 
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/fec1044e-696b-451d-ae57-7e27d7121395)
 
-#Step5: Create the Target Group#
+# Step5: Create the Target Group 
 
 For doing this we will click on Target Group option under elastic load balancing option Following window will appear
 
@@ -78,7 +77,7 @@ For doing this we will click on Target Group option under elastic load balancing
 
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/384ee628-6776-4f06-9cab-80dc17e7856c)
 
-#Step 6 : Creating LoasBalancer#
+# Step 6 : Creating LoasBalancer
 
 We will click on load Balancer under load balancer option
 
@@ -96,7 +95,7 @@ We will click on load Balancer under load balancer option
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/c12a9b6a-2e2d-4258-97ce-3a4238c68480)
 
 
-#Step 7 : Installing the Apache in Our EC2#
+# Step 7 : Installing the Apache in Our EC2
 
 Now we will connect to our EC2 server and install apache on it
 
@@ -111,7 +110,7 @@ When we are hitting the dns of the load balancer with following url it shows fol
 
 ![image](https://github.com/Blass2000/SSL-on-AWS-S3-Bucket-/assets/89789502/0eaf8431-9615-43ce-a8a8-e89ea07d4026)
 
-#Step 8 : Configuring Record of LoadBalancer on Route 53 and Directing to HTTPS#
+# Step 8 : Configuring Record of LoadBalancer on Route 53 and Directing to HTTPS
 
 Go to Route 53
 
